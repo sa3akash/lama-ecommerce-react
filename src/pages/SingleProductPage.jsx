@@ -131,5 +131,24 @@ const AmmountContainer = styled.div`
   align-items: center;
   font-weight: 700;
 `;
-const Ammount = styled.span``;
-const Button = styled.button``;
+const Ammount = styled.span`
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 10px;
+`;
+const Button = styled.button`
+    padding: 15px;
+    border: 2px solid teal;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+    &:hover{
+        background-color: #f8f4f4;
+    }
+`;
