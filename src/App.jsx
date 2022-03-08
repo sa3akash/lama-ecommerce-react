@@ -1,5 +1,7 @@
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import ProductsPages from "./pages/ProductsPages";
+import Register from "./pages/Register";
 import SingleProductPage from "./pages/SingleProductPage";
 
 function App() {
@@ -7,7 +9,9 @@ function App() {
     <>
       {/* <Home /> */}
       {/* <ProductsPages /> */}
-      <SingleProductPage />
+      {/* <SingleProductPage /> */}
+      {/* <Register /> */}
+      <Login />
     </>
   );
 }
