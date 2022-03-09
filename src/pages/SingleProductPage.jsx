@@ -5,6 +5,7 @@ import Announcment from "../components/Announcment";
 import NewsLetter from "../components/NewsLetter";
 import Footer from "../components/Footer";
 import { Add, Remove } from "@mui/icons-material";
+import { mobile } from "../Responsive";
 
 const SingleProductPage = () => {
   return (
@@ -69,6 +70,7 @@ const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
+  ${mobile({ display: "block", padding: "15px" })}
 `;
 const ImageContainer = styled.div`
   flex: 1;
@@ -77,10 +79,17 @@ const ImageContainer = styled.div`
     height: 80vh;
     object-fit: cover;
   }
+  ${mobile({
+    width: "100%",
+    height: "50vh",
+    overflow: "hidden",
+    padding: "20px",
+  })}
 `;
 const InfoContainer = styled.div`
   flex: 1;
   padding: 0 50px;
+  ${mobile({ padding: "20px 0" })}
 `;
 const Title = styled.h1`
   font-weight: 200;
@@ -125,6 +134,7 @@ const AddContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({ width: "100%" })}
 `;
 const AmmountContainer = styled.div`
   display: flex;
@@ -132,23 +142,23 @@ const AmmountContainer = styled.div`
   font-weight: 700;
 `;
 const Ammount = styled.span`
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    border: 1px solid teal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0 10px;
 `;
 const Button = styled.button`
-    padding: 15px;
-    border: 2px solid teal;
-    background-color: white;
-    cursor: pointer;
-    font-weight: 500;
-    &:hover{
-        background-color: #f8f4f4;
-    }
+  padding: 15px;
+  border: 2px solid teal;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+  &:hover {
+    background-color: #f8f4f4;
+  }
 `;

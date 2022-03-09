@@ -5,9 +5,9 @@ import {
 } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../Responsive";
 
 const Product = ({ item }) => {
-
   return (
     <Container>
       <Circle></Circle>
@@ -39,6 +39,11 @@ const Container = styled.div`
   justify-content: center;
   background-color: #f5fbfd;
   position: relative;
+  ${mobile({
+    width: "100%",
+    margin: "20px",
+    overflow: "hidden",
+  })}
 `;
 const Circle = styled.div`
   width: 250px;
@@ -65,8 +70,8 @@ const InfoContainer = styled.div`
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in;
-  &:hover{
-      opacity: 1;
+  &:hover {
+    opacity: 1;
   }
 `;
 const Icon = styled.div`
@@ -78,7 +83,6 @@ const Icon = styled.div`
   align-items: center;
   justify-content: center;
   margin: 10px;
-  cursor: pointer;
   cursor: pointer;
   transition: all 0.5s ease;
   &:hover {

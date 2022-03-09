@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../Responsive";
 
 const Login = () => {
   return (
@@ -45,6 +46,7 @@ const Wrapper = styled.div`
   width: 40%;
   background-color: white;
   padding: 20px;
+  ${mobile({ width: "90%" })}
 `;
 const Title = styled.h1`
   font-size: 25px;
@@ -54,11 +56,9 @@ const Title = styled.h1`
 `;
 const RegisterFrom = styled.form`
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   input {
     flex: 1;
-    width: 60%;
     min-width: 40%;
     margin: 10px;
     padding: 10px;
@@ -89,3 +89,5 @@ const Button = styled.button`
   color: white;
   cursor: pointer;
 `;
+
+// 2 11 00

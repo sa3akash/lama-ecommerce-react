@@ -10,6 +10,7 @@ import {
 } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../Responsive";
 
 const Footer = () => {
   return (
@@ -97,6 +98,9 @@ export default Footer;
 const Container = styled.div`
   display: flex;
   align-items: center;
+  ${mobile({
+    display: "block",
+  })}
 `;
 
 const Left = styled.div`
